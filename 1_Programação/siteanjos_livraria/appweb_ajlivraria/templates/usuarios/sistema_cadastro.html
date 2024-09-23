@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="{% static 'css/stylesistema.css' %}" />
+</head>
+<body>
+    <div>
+       
+    </div>
+  <div class="box">
+      
+          <fieldset>
+              <legend><b>Sistema de Cadastramento</b></legend>
+          
+          <br>
+            <div class="inputBox">
+                <center>
+                      <a href="{% url 'cad_func' %}"><input type="button" value="Cadastro Funcionario"></a> 
+                      <a href="{% url 'cad_editora' %}"><input type="button" value="Cadastro Editora"></a> 
+                      <a href="{% url 'cad_cliente' %}"><input type="button" value="Cadastro Cliente"></a>
+                      <br><br>
+                      <br><br>
+                      <br><br>
+                      <br><br>
+              
+                      <a href="{% url 'cad_autor' %}"><input type="button" value="Cadastro Autor"></a> 
+                      <a href="{% url 'cad_livro' %}"><input type="button" value="Cadastro De Livro"></a> 
+                      <a href="{% url 'cad_pedido' %}"><input type="button" value="Cadastro Pedidos"></a>
+                      <br><br>
+                      <br><br>
+                      <br><br>
+                      <br><br>
+                </center>
+
+            </div>
+          </fieldset>
+       
+       
+    </div>      
+
+</body>
+</html>

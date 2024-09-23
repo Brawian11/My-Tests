@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="{% static 'css/stylecliente.css' %}" />
+</head>
+<body>
+    <div class="box"> 
+        <form method="post">
+            {% csrf_token %}
+         <center>
+                  <h1>Cadastro Cliente</h1>
+         </center>   
+         <fieldset>        
+            <center>
+                    <br>
+                    <div class="inputBox">
+                     <br><label for="nome">Nome</label><br>
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <br>
+                    <br>
+                 
+                    <div class="inputBox">
+                     <br><label for="nome">Email</label><br>
+                    <input type="text" name="Email" id="Email" class="inputUser" required>
+                    <br>
+                    <br>
+                    
+                    <div class="inputBox">
+                     <br><label for="nome">Login</label><br>
+                    <input type="text" name="Login" id="Login" class="inputUser" required>
+                    <br>
+                    <br>
+ 
+                    <div class="inputBox">
+                     <br><label for="nome">Senha</label><br>
+                    <input type="password" name="Senha" id="Senha" class="inputUser" required>
+                    <br>
+                    <br>
+                     
+                    <div class="inputBox">
+                     <br><label for="nome">Confirmar senha</label><br>
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <br>
+                    <br>
+                    
+                    <div class="inputBox">
+                     <br><label for="nome">Preferencia de leitura</label><br>
+                    <input type="text" name="name" id="nome" class="inputUser" required>
+                    <br>
+                    <br>
+  
+                    <div class="inputBox">
+                     <b><label for="date">Data Nascimento</label><br>
+                    <input type="date" name="nome" id="nome" class="inputUser" required>
+                    <br>
+                    <br>
+                    <button>Cadastrar</button> <a href="{% url 'cad_sistem' %}"><button>Cancelar</button><br></a>
+                     
+                   
+           </center>
+ 
+                 </div>
+
+                </fieldset>
+            </form>
+            
+         </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="{% static 'css/styleautor.css' %}" />
+</head>
+<body>
+    <center>
+        <legend><h1>Cadastro do autor</h1></legend>
+    </center>        
+<fieldset>      
+      
+    <center>
+        <form method="post">
+            {% csrf_token %}
+            <label for="nome">Nome:</label><br>
+            <input type="text"  name="nome" required><br>
+            <br>
+            <br>
+            <label for="nacionalidade">Nacionalidade:</label><br>
+            <input type="text"  name="nacionalidade" required><br>
+            <br>
+            <br>
+            <label for="ano nascimento">Ano nascimento:</label><br>
+            <input type="date"  name="anonascimento" required>
+            <br>
+            <br>
+            <label for="editora id">Editora id:</label><br>
+            <input type="text"  name="codeditora" required><br>
+            <br>
+            <br>
+            
+          
+
+            <input type="submit" value="Cadastrar">
+            <a href="{% url 'cad_sistem' %}"><input type="submit" value="Cancelar"></a>
+        </form>
+    </center>
+
+
+</fieldset>
+</body>
+</html>

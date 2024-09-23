@@ -1,0 +1,38 @@
+body{
+    background-image: url(/static/img/imglivraria.jpg);
+    background-repeat: no-repeat;
+    background-size: 110% 950px;
+
+}
+
+div{
+        
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    transform: translate(-170%,-53%);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+}
+
+input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+
+}
+
+button{
+    background-color: blue ;
+       
+    padding: 18px;
+    width: 82%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    
+}

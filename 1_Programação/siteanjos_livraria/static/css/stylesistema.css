@@ -1,0 +1,22 @@
+body{
+    background-image: url(/static/img/livro.jpg);
+    background-repeat: no-repeat;
+    background-size: 110% 950px;
+    }
+
+div{
+    color: white;
+        
+
+    }
+input{
+  
+    font-size: 25px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 22%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: gray;
+    
+    }
