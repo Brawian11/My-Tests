@@ -25,7 +25,9 @@ body {
     width: 100%; /* Faz a imagem preencher todo o espaço do carrossel */
     height: 500px; /* Define uma altura fixa para todas as imagens */
     object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+    
 }
+
 .summary {
     position: fixed ;
     top: 200px;
@@ -61,16 +63,23 @@ body {
     margin-bottom: 30px;
     padding: auto;
 }
-#rodape{
-    color: #000000;
+#rodape p{
+    color: #ffffff;
     text-decoration: none;
-    /* border-radius: 10px;
-    padding: 1%;
-    width: 1800px;
-    margin-top: 10px; */
+    border-radius: 0px;
+    padding: 2%;
+    width: 100%;
+    font-size: 20px;
+    text-decoration: underline rgba(0, 0, 0, 0.507) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 #rodape a{
     color: black;
     text-decoration: none;
-    display: inline-block;
+    display: inline;
+    line-height: 2;
+    font-size: 18px;
+    line-height: 3;
+    padding-bottom: 1%;
 }
