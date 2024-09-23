@@ -1,50 +1,22 @@
-/* #img_bg{
-        background-image: url('background.jpg');
-        background-size: cover; 
-        background-position: center;
-        background-repeat:no-repeat; 
-        background-attachment:scroll;
-        height: 100vh; 
-        background-color: black;  
-        margin: 0 auto;       
-} */
-
 body {
     background-image: url('background.jpg'); /* Imagem de fundo */
     background-size: cover; /* Faz com que a imagem cubra o fundo */
     background-attachment: fixed; /* A imagem se move com o scroll */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
-  }
-
-#artigo{
-    margin: 0 auto;
-    width: 65%;
 }
-.art_resume{
-    color: white;
-    width: 950px;
-    margin: 0 auto;
-}
-
-#carouselExampleCaptions{
-        margin: 0 auto;
-        width: 80%; /* Ajuste a largura conforme necessário */
-}
-
-#img_bg .content {
-    position: relative;
-    color: white; /* Para o texto ficar visível sobre a imagem */
-    text-align: center;
-    padding: 20px;
-}
-
 #hover :hover{
     background-color: rgb(255, 0, 0);
     color: black;
 }
-
-
+#artigo{
+    margin: 0 auto;
+    width: 65%;
+}
+#carouselExampleCaptions{
+    margin: 0 auto;
+    width: 80%; /* Ajuste a largura conforme necessário */
+}
 #carouselExampleCaptions {
     max-width: 1000px;
     max-height: 600px;
@@ -54,7 +26,39 @@ body {
     height: 500px; /* Define uma altura fixa para todas as imagens */
     object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
 }
+.summary {
+    position: fixed;
+    top: 200px;
+    left: 1400px;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    
+}
 
+.summary a {
+    text-decoration: none;
+    color:brown;
+    margin-bottom: 5px;
+    display: block;
+}
+
+  /* Estilo dos tópicos */
+.topic {
+    margin: 100px 0;
+}
+
+h2 {
+    color: #333;
+}
+.art_resume{
+    color: white;
+    width: 950px;
+    margin: 0 auto;
+    
+}
 #rodape{
+    text-decoration: none;
     
 }
