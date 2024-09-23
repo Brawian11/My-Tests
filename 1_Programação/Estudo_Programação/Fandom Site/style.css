@@ -27,14 +27,15 @@ body {
     object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
 }
 .summary {
-    position: fixed;
+    position: fixed ;
     top: 200px;
     left: 1400px;
     background-color: #000000;
     padding: 10px;
     border-radius: 10px;
     color: white;
-    
+    width: 150px;
+    height: 200px;
 }
 
 .summary a {
@@ -46,19 +47,30 @@ body {
 
   /* Estilo dos tópicos */
 .topic {
-    margin: 100px 0;
+    margin: 10px 0;
 }
 
-h2 {
+/* h2 {
     color: #333;
-}
+} */
 .art_resume{
     color: white;
-    width: 950px;
+    width: 930px;
     margin: 0 auto;
-    
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: auto;
 }
 #rodape{
+    color: #000000;
     text-decoration: none;
-    
+    /* border-radius: 10px;
+    padding: 1%;
+    width: 1800px;
+    margin-top: 10px; */
+}
+#rodape a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
 }
