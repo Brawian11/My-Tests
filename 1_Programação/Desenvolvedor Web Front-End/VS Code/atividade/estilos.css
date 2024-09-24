@@ -1,0 +1,82 @@
+body{
+    width: 1300px;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#topo img{
+    width: 60px;
+    float: left;
+}
+
+#rede img{
+    float: right;
+}
+
+#menu{
+    text-align: center;
+    margin-top: 25;
+    font-size: 30px;
+    
+}
+#menu ul{
+    list-style: none;
+}
+
+#menu li{
+    display: inline;
+    font-weight: bold;
+}
+
+
+#principal img{
+    width: 1300px;
+}
+
+#secundario{
+    border: 3px black solid;
+}
+
+#secundario h2{
+    color: rgb(0, 6, 95);
+    text-align: center;
+    border: 3px black;
+    
+    
+}
+#secundario p{
+    width: 800px;
+    text-align: left;    
+    float: right;
+}
+
+#secundario img{
+    clear: both;
+    width: 450px;
+    float:left ;
+}
+
+#terceiro p{
+    clear: both;
+    text-align: left;
+}
+
+.coluna{
+    width: 400px;
+    float:left;
+    margin: 10px;
+    border:2px solid black ;
+    display: inline;
+    text-align: center;
+}
+
+.coluna a{
+    text-align: right;
+}
+
+#rodape{
+    clear: both;
+    text-align: center;
+    background-color: rgba(0, 153, 255, 0.7);
+    border: 2px black solid;
+}

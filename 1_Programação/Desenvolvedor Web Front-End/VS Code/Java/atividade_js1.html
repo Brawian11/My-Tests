@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <script>
+            // let idade = window.prompt('Digite sua Idade');
+            // if (idade < 18){
+            //       alert('Você é menor de idade!');
+            // } else {
+            //       alert('Você ja é maior de idade!');
+            // }
+
+            let peso = window.prompt('Digite seu peso: ');
+            let altura = window.prompt('Difite a sua altura:');
+            let imc = peso / (altura*altura)
+            if (imc <= 18.5 ){
+                  alert('Abaixo do peso ' + imc);
+            } else if (imc <= 24.99) {
+                  alert('Normal ' + imc);
+            } else if (imc <= 29.99) {
+                  alert('Sobrepeso ' + imc);
+            } else{
+                  alert('Obesidade ' + imc);
+            
+            }
+      </script>
+</body>
+</html>

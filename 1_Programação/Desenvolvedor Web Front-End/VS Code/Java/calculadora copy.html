@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculadora</title>
+</head>
+<body>
+      <h2>Calculadora</h2>
+      
+      <div>
+            <label>valor 1</label>
+            <input type="number" id="v1" name="v1">
+      </div>
+      <div>
+            <label>valor 2</label>
+            <input type="number" id="v2" name="v2">
+      </div>
+      <div>
+            <label>resultado</label>
+            <input type="number" id="resultado" name="resultado">
+      </div>
+      <div>
+            <button onclick="calcular('somar')">+</button>
+            <button onclick="calcular('subtrair')">-</button>
+            <button onclick="calcular('multipicar')">x</button>
+            <button onclick="calcular('dividir')">/</button>
+      </div>
+      <script>
+            function calcular(operacao){
+                  // recuperar o que foi digitdo no input
+                  let v1 = parseFloat (document.getElementById('v1').value);
+                  let v2 = parseFloat (document.getElementById('v2').value);
+                  let resultado = v;
+                  if (operacao == 'somar'){
+                        resultado = v1 + v2
+                  } else if (operacao == 'subtrair'){
+                        resultado = v1 - v2
+                  } else if (operacao == 'multiplicar'){
+                        resultado = v1 * v2
+                  } else if (operacao == 'dividir'){
+                        resultado = v1 / v2
+                  }
+                 document.getElementById('resultado').value = resultado
+            }
+           
+      </script>
+</body>
+</html>

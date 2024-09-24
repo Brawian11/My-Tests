@@ -1,0 +1,30 @@
+.inline, .block, .inblock{
+      background-color: rgb(65, 170, 170) ;
+      width: 100px;
+      height: 100px;
+}
+
+.inline{
+      display: inline;
+}
+
+.block{
+      display: block;
+}
+
+.inblock{
+      display: inline-block;
+}
+
+.item{
+      background-color: coral;
+      width: 200px;
+      height: 200px;
+}
+
+.container{
+      max-width: 800px;
+      background-color: aquamarine;
+      display: flex;
+      flex-wrap: wrap;
+}

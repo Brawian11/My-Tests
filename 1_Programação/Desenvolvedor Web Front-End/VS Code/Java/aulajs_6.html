@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <div>
+            <label for="nome">Nome:*</label>
+            <input type="text" name="nome" id="nome"><span style="color: red;">*</span>
+      </div>
+      <div>
+            <label for="email">E-mail:*</label>
+            <input type="email" name="email" id="email"><span style="color: red;">*</span>
+      </div>
+      <div>
+            <label for="confemail">Confirme seu E-mail:</label>
+            <input type="email" name="confemail" id="confemail"><span style="color: red;">*</span>
+      </div>
+      <div>
+            <button onclick="validar()">Validar</button>
+            <p id="menssagem"></p>
+      </div>
+      <script>
+            function validar() {
+                  let nome, email, confemail, menssagem;
+                  nome = document.getElementById('nome').value;
+                  email = document.getElementById('email').value;
+                  confemail = document.getElementById('confemail').value;
+
+                  if (nome.length < 10){
+                        menssagem = 'Nome inválido';
+                  } else {
+                        menssagem = 'Validado com sucesso'
+                  }
+                  if (email == confemail){
+                        menssagem = 'Email válido'
+                  }
+                  else {
+                        menssagem = 'Os emails não conferem'
+                  }
+                  
+                  document.getElementById('menssagem').innerHTML = menssagem;
+            }
+      </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="{% static 'css/stylepedido.css' %}" />
+</head>
+<body>
+    <center>
+        <legend><h1>Cadastro de Pedidos</h1></legend>
+    </center>        
+<fieldset>      
+      
+    <center>
+        <form method="post">
+            {% csrf_token %}
+            <label for="data do pedido">Data do pedido:</label><br>
+            <input type="date" id="datapedido" name="datapedido" required><br>
+            <br>
+            <br>
+            <label for="">Quantidade de Itens:</label><br>
+            <input type="number" id="qtd_itens" name="qtd_itens" required><br>
+            <br>
+            <br>
+            <label for="">ID do Cliente:</label><br>
+            <input type="text" id="cli_id" name="cli_id" required><br>
+            <br>
+            <br>
+            <label for="">ID do Funcionário:</label><br>
+            <input type="text" id="func_id" name="func_id" required><br>
+            <br>
+            <br>
+           
+            <input type="submit" value="Cadastrar">
+            <input type="submit" value="Cancelar">
+        </form>
+    </center>
+</fieldset>
+
+</body>
+</html>

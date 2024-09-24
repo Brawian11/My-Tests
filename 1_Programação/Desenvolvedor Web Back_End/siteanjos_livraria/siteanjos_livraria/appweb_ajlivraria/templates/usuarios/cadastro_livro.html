@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/stylelivro.css' %}" />
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <legend><h1>Cadastro Livro</h1></legend>
+    </center>        
+<fieldset>      
+      
+    <center>
+        <form method="post">
+            {% csrf_token %}
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+            <br>
+            <br>
+            <label for="num_pagina">Numero de Paginas:</label><br>
+            <input type="number" id="num_pagina" name="num_pagina" required><br>
+            <br>
+            <br>
+          
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+            
+            <label for="ano">Ano:</label>
+            <input type="date" id="ano" name="ano" required><br>
+            <br>
+            <br>
+            <label for="categ">Categoria:</label><br>
+            <input type="text" id="categ" name="categ" required><br>
+            <br>
+            <br>
+
+            <label for="idioma">Idioma:</label><br>
+            <input type="text" id="idioma" name="idioma" required><br>
+            <br>
+            <br>
+            <label for="capa">Tipo de Capa:</label><br>
+            <input type="text" id="capa" name="capa" required><br>
+            <br>
+            <br>
+           
+
+            <input type="submit" value="Cadastrar">
+            <a href="{% url 'cad_sistem' %}"><input type="button" value="Cancelar"></a>
+        </form>
+    </center>
+</fieldset>
+
+</body>
+</html>

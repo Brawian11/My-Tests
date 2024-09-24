@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculadora</title>
+</head>
+<body>
+      <h2>Calculadora</h2>
+      
+      <div>
+            <label>valor 1</label>
+            <input type="number" id="v1" name="v1">
+      </div>
+      <div>
+            <label>valor 2</label>
+            <input type="number" id="v2" name="v2">
+      </div>
+      <div>
+            <label>resultado</label>
+            <input type="number" id="resultado" name="resultado">
+      </div>
+      <div>
+            <button onclick="somar()">+</button>
+            <button onclick="subtrair()">-</button>
+            <button onclick="multiplicar()">x</button>
+            <button onclick="dividir()">/</button>
+      </div>
+      <script>
+            function somar(){
+                  // recuperar o que foi digitdo no input
+                  let v1 = parseFloat (document.getElementById('v1').value);
+                  let v2 = parseFloat (document.getElementById('v2').value);
+                  // canculando
+                  let resultado = v1 + v2;
+                  // exibir
+                  document.getElementById('resultado').value = resultado
+            }
+            function subtrair(){
+                  // recuperar o que foi digitdo no input
+                  let v1 = parseFloat (document.getElementById('v1').value);
+                  let v2 = parseFloat (document.getElementById('v2').value);
+                  // canculando
+                  let resultado = v1 - v2;
+                  // exibir
+                  document.getElementById('resultado').value = resultado
+            }
+            function multiplicar(){
+                  // recuperar o que foi digitdo no input
+                  let v1 = parseFloat (document.getElementById('v1').value);
+                  let v2 = parseFloat (document.getElementById('v2').value);
+                  // canculando
+                  let resultado = v1 * v2;
+                  // exibir
+                  document.getElementById('resultado').value = resultado
+            }
+            function dividir(){
+                  // recuperar o que foi digitdo no input
+                  let v1 = parseFloat (document.getElementById('v1').value);
+                  let v2 = parseFloat (document.getElementById('v2').value);
+                  // canculando
+                  let resultado = v1 / v2;
+                  // exibir
+                  document.getElementById('resultado').value = resultado
+            }
+      </script>
+</body>
+</html>

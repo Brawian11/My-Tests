@@ -1,0 +1,25 @@
+body{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin: 0 auto;
+      max-width: 1200px;
+}
+
+/*Aplicando estilos a vários elementos*/
+header, nav, main, footer{
+      background-color: silver;
+      border: 1px black solid;
+
+}
+
+img{
+      max-width: 100%;
+      width: 1200px;
+}
+
+.item{
+      width: 50%;
+}
+main{
+      display: flex;
+      flex-wrap: wrap;
+}

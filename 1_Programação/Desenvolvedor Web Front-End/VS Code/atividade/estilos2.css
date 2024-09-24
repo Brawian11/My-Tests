@@ -1,0 +1,42 @@
+body{
+    width: 1200;
+    margin: 20 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#topo img{
+    width:60px;
+
+}
+
+#menu{
+    text-align: center;
+}
+
+
+#menu ul{
+    list-style: none;
+}
+
+#menu li{
+    display: inline;
+
+}
+
+#terceiro img{
+    float: left;
+}
+
+#principal img{
+    width: 1200px;
+}
+
+.coluna{
+    width: 375px;
+    float: left;
+    margin: 10px;
+    border:2px solid black ;
+}
+#rodape{
+    text-align: center;
+}

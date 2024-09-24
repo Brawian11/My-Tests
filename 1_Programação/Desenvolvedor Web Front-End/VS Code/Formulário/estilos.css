@@ -1,0 +1,27 @@
+body{
+      margin: 0 auto;
+      width: 50%;
+}
+
+h1{
+      font-size: 50px;
+}
+
+#bandeira{
+display: inline;
+}
+
+#bandeira p{
+      float: left;
+      margin-top: 35px;
+      margin-right: 60px;
+}
+
+#bandeira img{
+      width: 70px;
+    
+}
+
+#valid{
+      display:flex;
+}
