@@ -5,6 +5,9 @@ body {
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
 }
+#artigo h3{
+    width: 400px;
+}
 #hover :hover{
     background-color: rgb(255, 0, 0);
     color: black;
@@ -31,7 +34,7 @@ body {
 .summary {
     position: fixed ;
     top: 200px;
-    left: 1000px;
+    left: 1400px;
     background-color: #000000;
     padding: 10px;
     border-radius: 10px;
@@ -39,7 +42,7 @@ body {
     border-style: solid;
     border-color: red;
     color: white;
-    width: 150px;
+    width: 200px;
     height: 200px;
 }
 
@@ -58,26 +61,62 @@ body {
 /* h2 {
     color: #333;
 } */
-.art_resume{
+.art{
     color: white;
-    width: 630px;
+    width: 800px;
     margin: 0 auto;
     font-size: 15px;
     margin-bottom: 30px;
-    padding: auto;
+    padding: 10px;
 }
 .card{
     margin: 0 auto;
     background-color: #000000;
     color: white;
+    width: 600;
     
 
 }
-#out{
+.out{
     width: 400px;
     margin: 0 auto;
     margin-bottom: 10px;
 }
+.heading-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0); /* Fundo com transparência */
+    padding: 0px; /* Espaçamento ao redor do texto */
+    margin: 10px 0; /* Margem superior e inferior */
+  }
+  
+  .heading-with-lines {
+    position: relative;
+    color: #ff4747; /* Cor do texto */
+    font-size: 2em; /* Ajuste conforme necessário */
+    padding: 2px 2px; /* Para dar um espaçamento interno no texto */
+  }
+  
+  .heading-container::before,
+  .heading-container::after {
+    content: ''; /* Elemento vazio para as linhas */
+    position: absolute;
+    top: 39%;
+    width: 31.6%; /* Tamanho da linha */
+    height: 2px; /* Espessura da linha */
+    background-color: #ff4747; /* Cor das linhas */
+  }
+  
+  .heading-container::before {
+    left: 0;
+  }
+  
+  .heading-container::after {
+    right: 0;
+  }
+  
 #rodape p{
     color: #ffffff;
     text-decoration: none;
@@ -92,9 +131,9 @@ body {
 #rodape a{
     color: black;
     text-decoration: none;
-    display: inline;
+    /* display: inline; */
     line-height: 2;
     font-size: 18px;
-    line-height: 3;
-    padding-bottom: 1%;
+    /* line-height: 3; */
+    /* padding-bottom: 1%; */
 }
