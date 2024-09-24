@@ -1,5 +1,5 @@
 body {
-    background-image: url('background.jpg'); /* Imagem de fundo */
+    background-image: url('/1_Programação/Estudo_Programação/Fandom Site/imgs/background.jpg'); /* Imagem de fundo */
     background-size: cover; /* Faz com que a imagem cubra o fundo */
     background-attachment: fixed; /* A imagem se move com o scroll */
     background-position: center; /* Centraliza a imagem */
