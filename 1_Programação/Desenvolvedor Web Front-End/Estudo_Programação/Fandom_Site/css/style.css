@@ -1,5 +1,5 @@
 body {
-    background-image: url('/imgs/background.jpg'); /* Imagem de fundo */
+    background-image: url('/Fandom_Site/imgs/background.jpg'); /* Imagem de fundo */
     background-size: cover; /* Faz com que a imagem cubra o fundo */
     background-attachment: fixed; /* A imagem se move com o scroll */
     background-position: center; /* Centraliza a imagem */
@@ -147,3 +147,20 @@ body {
     border-radius: 10px;
     padding: 2px;
 }
+
+.footer {
+    background-color: #1b1b1b;
+    text-align: center;
+    padding: 20px;
+    color: #dcdcdc;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px; /* Ajuste a altura conforme necessário */
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }

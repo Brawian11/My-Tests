@@ -1,0 +1,11 @@
+.universal-bg-image{
+    background-image: url('../images/fundo.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Cobre todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    height: 70vh; /* Altura da viewport */
+}
+
+#hover :hover{
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
