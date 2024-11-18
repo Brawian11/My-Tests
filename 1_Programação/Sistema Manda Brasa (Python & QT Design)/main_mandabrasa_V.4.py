@@ -1,10 +1,18 @@
 from PyQt5 import uic, QtWidgets #importar uic e QTWigets do pyqt5
 import mysql.connector 
 
+import ctypes
+import sys
+
 import datetime
 global data
 data = datetime.datetime.now()
 data_formatada = data.strftime('%d/%m/%Y')
+
+icon_path = '\Sistema Manda Brasa (Python & QT Design)\icone_hamburger.ico'
+icon = ctypes.windll.shell32.LoadImage(0, icon_path, 1, 32, 32, 0x10)
+hwnd = ctypes.windll.user32.GetConsoleWindow()
+ctypes.windll.user32.SetWindowIcon(hwnd, icon)
 
 #configuração do BD
 banco = mysql.connector.connect(
